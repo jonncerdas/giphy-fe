@@ -31,11 +31,14 @@ const useStyles = makeStyles((theme: Theme) =>
       float: 'left',
     },
     link: {
+        borderBottom: '1px solid #000',
+        padding: '0 10px 10px',
         color: "#000000",
         "&:hover": {
             color: "#000000",
             textDecoration: "none"
-        }
+        },
+      textDecoration: "none"
     },
     wrapIcon: {
       verticalAlign: 'middle',
@@ -70,12 +73,12 @@ export default function GiphySearchBar({showBackButton, offset}: Props) {
               maxWidth: 800
             }}
           />
-            <Link to="/favorites">My Saved GIFs</Link>
+            <Link className={classes.link} to="/favorites">My Saved GIFs</Link>
 
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <Link to="/"><ReplyIcon/> Back</Link>
+          <Link className={classes.link} to="/"><ReplyIcon/> Back</Link>
           <Typography variant="h6">
             My Saved GIFs
           </Typography>

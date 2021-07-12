@@ -4,8 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installation
 1. [Install docker compose](https://docs.docker.com/compose/install/)
-2. Make sure you are in the project's root folder 
-3. Run `docker-compose up` 
+2. Make sure you are in the project's root folder
+3. Add **Giphy api key** to .env file
+4. Run `docker-compose up` 
 
 ## Useful comands
 
@@ -31,8 +32,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Assumptions:
 
 Tradeoffs:
-- At first I implement pagination in the tradition way, however the user experience was not the best. 
-  So I implemented an "infinite scroll" and added a "go to top button" on the button right.
-- I remove the "Search for GIFs" button is more natural to press just enter.
-- I added a "Trending" link at the right of the search bar just to simulate a "home".
+- I implemented an "infinite scroll" and added a "go to top button", I believe is a better user experience .
+- I remove the "Search for GIFs" button hit enter is enough.
 - I slighty change the gif component, so the title, user, heart icon and share icon will show on hover.
+
+## Next Steps
+
+- Due to time constraints tests are missing
+- Authentication

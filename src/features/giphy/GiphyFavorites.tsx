@@ -56,6 +56,7 @@ export function GiphyFavorites() {
       <main>
         <Container maxWidth="md">
           <Grid container spacing={2}>
+            { favoriteGIFs.length === 0 && (<div>No favorites yet!</div>) }
             {
               favoriteGIFs.map((gif: GifObject) => (
                       <SimpleCard
